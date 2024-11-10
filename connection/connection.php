@@ -2,14 +2,12 @@
 const SERVER='localhost';
 const DBNAME= 'instagram';
 const DBUSER='root';
-const DBPASSWORD='';
+const DBPASSWORD='12345';
 const DBCHARSET='UTF8';
 const DBTYPE='mysql';
 
-req
-
 try {
-    $conection = new PDO(
+    $connection = new PDO(
         DBTYPE . ':host=' . SERVER . ';dbname=' . DBNAME . ';charset=' . DBCHARSET,
         DBUSER,
         DBPASSWORD,

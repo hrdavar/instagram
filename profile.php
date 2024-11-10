@@ -1,3 +1,9 @@
+<?php
+require_once('connection/connection.php');
+require_once('helper/helper-func.php');
+if(user_found(page_url())==false){redirect('404.php');}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -367,7 +373,7 @@
                         </div>
                         <div class="info">
                             <p class="name">
-                                Zineb_essoussi
+                                <?= page_url() ?>
                                 <button class="edit_profile">
                                     Edit profile 
                                 </button>

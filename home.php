@@ -1,6 +1,6 @@
 <?php
 
-require_once('connection/connection');
+require_once('connection/connection.php');
 require_once('lib/header.php');
 ?>
 
@@ -11,7 +11,7 @@ require_once('lib/header.php');
                 <!-- nav for big->medium screen -->
                 <div class="nav">
                     <div class="logo">
-                        <a href="./home.html"git >
+                        <a href="./home.html">
                             <img class="d-block d-lg-none small-logo" src="./images/instagram.png" alt="logo">
                             <img class="d-none d-lg-block" src="./images/logo_menu.png" alt="logo">
                         </a>
@@ -62,7 +62,7 @@ require_once('lib/header.php');
 
                             </li>
                             <li>
-                                <a href="./profile.html">
+                                <a href="profile.php">
                                     <img class="circle story" src="./images/profile_img.jpg">
                                     <span class="d-none d-lg-block ">Profile</span>
                                 </a>
@@ -185,7 +185,7 @@ require_once('lib/header.php');
                 <a href="./explore.html"><img src="./images/compass.png"></a>
                 <a href="./reels.html"><img src="./images/video.png"></a>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#create_modal"><img src="./images/tab.png"></a>
-                <a href="profile.html"><img class="circle story" src="./images/profile_img.jpg"></a>
+                <a href="profile.php"><img class="circle story" src="./images/profile_img.jpg"></a>
             </div>
         </div>
         <!-- search  -->
