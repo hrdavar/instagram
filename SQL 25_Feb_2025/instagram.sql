@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 10, 2024 at 04:58 PM
+-- Generation Time: Feb 25, 2025 at 04:37 PM
 -- Server version: 8.0.40
 -- PHP Version: 8.2.12
 
@@ -54,6 +54,19 @@ CREATE TABLE `post` (
   `img2` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reel`
+--
+
+CREATE TABLE `reel` (
+  `id` int NOT NULL,
+  `title` text COLLATE utf8mb3_unicode_ci NOT NULL,
+  `city_id` tinyint NOT NULL,
+  `country_id` tinyint NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+
 --
 -- Indexes for dumped tables
 --
@@ -71,6 +84,12 @@ ALTER TABLE `post`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `reel`
+--
+ALTER TABLE `reel`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -84,6 +103,12 @@ ALTER TABLE `member`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `reel`
+--
+ALTER TABLE `reel`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
